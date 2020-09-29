@@ -138,6 +138,10 @@ if False in list_of_boolean and True in list_of_boolean:
 	print("Critical value pair {} and {} is a local maxima".format(list_critical_values[0],
                                                                        list_critical_values[1]
 		                                                      )
-																                                )
+	                                                              )
 else:
-	print("Flase")	
+	print("Critical value pair {} and {} is a local minima".format(list_critical_values[0],
+                                                                       list_critical_values[1]
+		                                                       )
+								       )																	                                )
+	
