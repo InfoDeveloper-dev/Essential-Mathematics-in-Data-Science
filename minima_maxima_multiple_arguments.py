@@ -68,22 +68,22 @@ second_order_direct_partial_derivative_x1 = sym.diff(partial_diff_x1, x1)
 second_order_direct_partial_derivative_x2 = sym.diff(partial_diff_x2, x2)
 
 print("Second order direct partial derivative w.r.t x1 is: {}".format(
-	                                                               second_order_direct_partial_derivative_x1)
+	                                                             second_order_direct_partial_derivative_x1)
                                                                     )
 
 print("Second order direct partial derivative w.r.t x2 is: {}".format(
-	                                                               second_order_direct_partial_derivative_x2)
+	                                                             second_order_direct_partial_derivative_x2)
                                                                     )
 print('-'*60)
 second_order_cross_partial_derivative_x1 = sym.diff(partial_diff_x2, x1)
 second_order_cross_partial_derivative_x2 = sym.diff(partial_diff_x1, x2)
 
 print("Second order cross partial derivative w.r.t x1 is: {}".format(
-	                                                               second_order_cross_partial_derivative_x1)
+	                                                            second_order_cross_partial_derivative_x1)
                                                                     )
 
 print("Second order cross partial derivative w.r.t x2 is: {}".format(
-	                                                               second_order_cross_partial_derivative_x2)
+	                                                            second_order_cross_partial_derivative_x2)
                                                                     )
 print('-'*60)
 f11 = second_order_direct_partial_derivative_x1
@@ -99,7 +99,7 @@ Show the matrix formed by using these values
 """
 matrix_second_order_partial_derivative = np.array([[f11, f12],
                                                   [f21,f22] 
-	                                              ], dtype='float')
+	                                          ], dtype='float')
 """
 Now we will calculate first principal minor
 second principal minor and so on 
@@ -136,8 +136,8 @@ print("Show boolean result is: {}".format(list_of_boolean))
 print('-'*60)
 if False in list_of_boolean and True in list_of_boolean:
 	print("Critical value pair {} and {} is a local maxima".format(list_critical_values[0],
-                                                                   list_critical_values[1]
-		                                                            )
+                                                                       list_critical_values[1]
+		                                                      )
 																                                )
 else:
 	print("Flase")	
