@@ -43,8 +43,8 @@ B contains constant terms in two  equations
 """
 
 A = np.array([[partial_diff_x1_coeff[0], partial_diff_x1_coeff[1]],
- 			  [partial_diff_x2_coeff[0], partial_diff_x2_coeff[1]],
- 			  ], dtype='float')
+ 	      [partial_diff_x2_coeff[0], partial_diff_x2_coeff[1]],
+ 	     ], dtype='float')
 
 B = np.array([-partial_diff_x1_coeff[2],-partial_diff_x2_coeff[2]])
 inverse_of_A = np.linalg.inv(A)
