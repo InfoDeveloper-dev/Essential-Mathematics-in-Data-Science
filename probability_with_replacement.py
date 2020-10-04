@@ -22,7 +22,10 @@ To solve these let us define two sets such that these sets satisfies the above m
 set a ={1,2,3} and set b = {4,5,6}
 
 Possible options from set a could be (1,2), 1,3) and it could be (2,1) also and hence for selecting \
-two numbers from set a, it is the problem of permutation not combinations which is P(3,2)
+two numbers from set a, it is the problem of permutation not combinations which is P(3,2) 
+
+** When the order does matter it is a Permutation. **
+** When the order doesn't matter, it is a Combination.**
 
 Possible option when chosing first number from set a and second number from set b are as below 
 (1,4), (1,5), (1,6),(2,4),(2,5),(2,6),(3,4),(3,5),(3,6)
