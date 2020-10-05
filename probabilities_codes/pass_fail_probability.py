@@ -37,5 +37,3 @@ prob_qualify = all_pass + first_second_pass_third_fail \
                + first_third_pass_second_fail + second_third_pass_first_fail
 
 print("probability that student will qualify is: {}".format(prob_qualify))
-
-
