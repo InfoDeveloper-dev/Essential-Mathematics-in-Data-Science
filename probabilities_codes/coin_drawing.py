@@ -47,6 +47,8 @@ prob_event_bias_is_already_occured = 2/9
 # calculatting numerator and denominator
 numerator = prob_event_fair_is_already_occured*prob_of_fair_coin
 denominator = numerator + prob_event_bias_is_already_occured*prob_of_bias_coin
+print(numerator)
+print(denominator)
 # calculating probability of fair coin when event has already occured
 prob_fair_when_event_occured = numerator/denominator
 print("probability of fair coin when event has already occured {}".format(prob_fair_when_event_occured))
