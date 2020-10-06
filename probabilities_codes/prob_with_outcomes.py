@@ -23,7 +23,7 @@ Let us find the value of p for which the result is an integer
 
 5 or 10 satisfies the result
 """
-
+# importing libraries
 import fractions
 import sympy as sym
 from sympy import sympify
