@@ -61,12 +61,7 @@ total_outcome = prob_office_time_intersection_car+ prob_office_time_intersection
                 + prob_office_time_intersection_bus + prob_office_time_intersection_train
 
 
-# prob_car_when_reached_office_happened = (prob_office_time_intersection_car)/(total_outcome)
 print('probability of time intersection car is :{} divided by total outcome is:{} = {}'.format(
-	                                  prob_office_time_intersection_car, total_outcome, 
-	                                  prob_office_time_intersection_car / total_outcome)
-                                      )
-
-
-
-
+	                                       prob_office_time_intersection_car, total_outcome, 
+	                                       prob_office_time_intersection_car / total_outcome)
+                                               )
