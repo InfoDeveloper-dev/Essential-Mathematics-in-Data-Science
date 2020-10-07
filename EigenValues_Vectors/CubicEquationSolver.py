@@ -103,3 +103,5 @@ def findG(a, b, c, d):
 # Helper function to return float value of h.
 def findH(g, f):
     return ((g ** 2.0) / 4.0 + (f ** 3.0) / 27.0)
+# Code finishes
+    
