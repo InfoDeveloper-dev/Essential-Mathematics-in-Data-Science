@@ -78,10 +78,10 @@ print('-'*32)
 print("First eigen value after solving cubic equation is: {}".format(first_eigen_value_round))
 
 matrix_after_eigen_value_subs = [
-                				[1-first_eigen_value_round, 4, 8], 
-                				[2, 3-first_eigen_value_round, 6],
-                				[4, 6, 8-first_eigen_value_round] 
-                				]
+                		[1-first_eigen_value_round, 4, 8], 
+                		[2, 3-first_eigen_value_round, 6],
+                		[4, 6, 8-first_eigen_value_round] 
+                		]
 
 print("matrix after subtracting first eigen value from its diaginal is:\n{}".format(
 	                                                matrix_after_eigen_value_subs)
@@ -107,21 +107,21 @@ Applying cramer's rule to solve for x1, x2 and x3
 matrix_x1 = np.array([
                      [4, 8],
                      [-11.85, 6]
-	                ])
+	             ])
 x1 = np.linalg.det(matrix_x1)
 x1 = math.ceil(x1)
 
 matrix_x2 = np.array([
                      [-13.85, 8],
                      [2, 6]
-	                ])
+	             ])
 x2 = np.linalg.det(matrix_x2)
 x2 = math.ceil(x2)
 
 matrix_x3 = np.array([
                      [-13.85, 4],
                      [2, -11.85]
-	                ])
+	             ])
 x3 = np.linalg.det(matrix_x3)
 x3 = math.floor(x3)
 
