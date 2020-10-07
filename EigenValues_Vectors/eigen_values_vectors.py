@@ -70,3 +70,66 @@ print('-'*82)
 print("Result using numpy root \n{}".format(
 	                                np.roots([1, -12, -41, -20])
 	                                   ))
+
+# Now let us calculate the eigen vectors corresponding to eigen values
+first_eigen_value = CubicEquationSolver.solve(1, -12, -41, -20)[0]
+first_eigen_value_round = round(first_eigen_value, 2)
+print('-'*32)
+print("First eigen value after solving cubic equation is: {}".format(first_eigen_value_round))
+
+matrix_after_eigen_value_subs = [
+                				[1-first_eigen_value_round, 4, 8], 
+                				[2, 3-first_eigen_value_round, 6],
+                				[4, 6, 8-first_eigen_value_round] 
+                				]
+
+print("matrix after subtracting first eigen value from its diaginal is:\n{}".format(
+	                                                matrix_after_eigen_value_subs)
+                                                                                 )
+print('-'*65)
+"""
+we are now solving equation AX=0
+where X=[x1, x2, x3]
+we will solve it using cramers rule
+"""
+x1 = sym.Symbol('x1')
+x2 = sym.Symbol('x2')
+x3 = sym.Symbol('x3')
+
+eigen_vectors = np.array([x1, x2, x3])
+eigen_vectors = np.reshape(eigen_vectors,[3, 1])
+AX = np.dot(matrix_after_eigen_value_subs, eigen_vectors)
+print("Multiplication of Matrix with eigen vectors is:\n{}".format(AX)) 
+print('-'*85)
+"""
+Applying cramer's rule to solve for x1, x2 and x3
+"""
+matrix_x1 = np.array([
+                     [4, 8],
+                     [-11.85, 6]
+	                ])
+x1 = np.linalg.det(matrix_x1)
+x1 = math.ceil(x1)
+
+matrix_x2 = np.array([
+                     [-13.85, 8],
+                     [2, 6]
+	                ])
+x2 = np.linalg.det(matrix_x2)
+x2 = math.ceil(x2)
+
+matrix_x3 = np.array([
+                     [-13.85, 4],
+                     [2, -11.85]
+	                ])
+x3 = np.linalg.det(matrix_x3)
+x3 = math.floor(x3)
+
+eigen_vector_corr_to_first_eigen = np.hstack([x1, x2, x3])
+print("eigen vector corresponds to eigen value {} is:\n{}".format(
+	                     first_eigen_value_round, eigen_vector_corr_to_first_eigen)
+                                                                 )
+"""
+Again using cramers rule one can find the eigen vector \
+corresponding to other eigen values also
+"""
