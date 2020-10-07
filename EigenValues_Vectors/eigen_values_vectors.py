@@ -65,8 +65,8 @@ print("Equation to solve value of lambda or eigen values is: {}".format(
 print('-'*82)
 print("Result using CubicEquationSolver \n{}".format(
 	                                CubicEquationSolver.solve(1, -12, -41, -20)
-	                                                ))
+	                                            ))
 print('-'*82)
 print("Result using numpy root \n{}".format(
 	                                np.roots([1, -12, -41, -20])
-	                                       ))
+	                                   ))
