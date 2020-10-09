@@ -48,5 +48,5 @@ comb_of_zero_out_three = fact_of_three/(factorial_of_zero*fact_of_three)
 
 prob_atleast_one_head = 1 - comb_of_zero_out_three*0.5**0*0.5**3
 print("probability that atleast one head:\n{}".format(
-	                            prob_atleast_one_head)
+	                        prob_atleast_one_head)
                                 )
