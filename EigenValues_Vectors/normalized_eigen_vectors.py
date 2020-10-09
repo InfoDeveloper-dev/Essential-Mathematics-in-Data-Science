@@ -52,7 +52,7 @@ else:
 
 first_eigen_value = eigen_values_int[0]
 print("first eigen value is: {}".format(
-	                 first_eigen_value)
+	             first_eigen_value)
                      )
 """
 let us find eigen vector corresponding to this eigen value
@@ -78,7 +78,7 @@ X = np.array([
 # dot product of A and X
 dot_a_x = np.dot(matrix_a_with_first_eigen_value, X)
 print("Dot product of matrix with first eigen value {} and X {} is:\n{}".format(
-	                                matrix_a_with_first_eigen_value, X, dot_a_x)
+	                            matrix_a_with_first_eigen_value, X, dot_a_x)
                                     )
 print('-'*50)
 first_simultaneous_equation = dot_a_x[0]
@@ -91,10 +91,10 @@ second_simultaneous_equation = second_simultaneous_equation[0]
 solution_second_simultaneous_equation = solve(second_simultaneous_equation, x1)
 
 print("Show the first value of eigen vector is: {}".format(
-	               solution_first_simultaneous_equation[0])
+	           solution_first_simultaneous_equation[0])
                    )
 print("Show the second value of eigen vector is: {}".format(
-	               solution_second_simultaneous_equation[0])
+	           solution_second_simultaneous_equation[0])
                    )
 
 """
@@ -108,9 +108,9 @@ we will put in the equation AX
 """
 
 X_calculated = np.array([
-	      [1],
-	      [-1]
-	     ])
+	              [1],
+	             [-1]
+	             ])
 
 dot_a_x_calculated = np.dot(matrix_a, X_calculated)
 """
