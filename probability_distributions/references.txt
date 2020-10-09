@@ -1,0 +1,4 @@
+1.) Basics of Probability, Binomial & Poisson Distribution: Illustration with practical examples
+    
+    See the video from this link to learn above concept: https://www.youtube.com/watch?v=c06FZ2Yq9rk
+
