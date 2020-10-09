@@ -28,9 +28,9 @@ from sympy import Eq
 from sympy.solvers import solve
 
 Matrix_A = np.array([
-           [-3, 2],
-	       [-1, 0]
-	       ])
+              [-3, 2],
+	      [-1, 0]
+	      ])
 greek_lambda =[chr(code) for code in range(955,956)]
 greek_lambda = sym.Symbol(greek_lambda[0])
 A = sym.Symbol('A')
@@ -93,5 +93,5 @@ print("Result of A raised to power 9 is: {}".format(A_power_nine))
 # we have taken identity matrix of order 2 as A matrix is also of order 2
 Result_after_real_subs = 511*Matrix_A + 510*np.identity(2)
 print("Result after real subsitution of Matrix A and I is:\n{}".format(
-	                                            Result_after_real_subs)
+	                                        Result_after_real_subs)
                                                 )
