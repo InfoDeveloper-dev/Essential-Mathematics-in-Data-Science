@@ -49,5 +49,5 @@ comb_of_five_out_of_ten = fact_of_ten/(fact_of_five*fact_of_five)
 prob_that_five_lines_busy = comb_of_five_out_of_ten*(prob_tele_busy) \
                             **5*(prob_not_busy)**5
 print("According to binomial distribution probability that 5 lines is busy is:\n{}".format(
-	                                                   round(prob_that_five_lines_busy, 3))
+	                                               round(prob_that_five_lines_busy, 3))
                                                        )                            
