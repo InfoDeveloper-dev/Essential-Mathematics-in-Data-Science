@@ -16,6 +16,5 @@ service_time_per_hour = 60/3
 
 prob_does_not_wait = arrival_time_per_hour/service_time_per_hour
 print("Probability that an arrival does not have to wait: {}".format(
-	                                               prob_does_not_wait)
+	                                           prob_does_not_wait)
                                                    )
-
