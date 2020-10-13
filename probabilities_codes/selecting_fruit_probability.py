@@ -43,6 +43,10 @@ P(B intersection l,s,y) = P(l,s,y intersection B)
                          = P(l|B).P(s|B).P(y|B).P(B)
 
 P(B/l,s,y) = P(l|B).P(s|B).P(y|B).P(B)/P(l).P(s).P(y)
+where P(B/l,s,y) is called Posterior Probability or Class given Data
+      P(B) is called Class Prior
+      P(l|B).P(s|B).P(y|B) is called Data likelihood or Data given class
+      P(l).P(s).P(y) is called Data Prior (Marginal)
 """
 
 long_col_sum = df_fruits['Long'].sum(skipna = True) 
