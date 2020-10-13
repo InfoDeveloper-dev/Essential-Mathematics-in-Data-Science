@@ -74,9 +74,9 @@ prob_banana = total_banana/total_fruits
 
 prob_long_sweet_yellow_banana = (prob_banana*prob_long_given_banana \
                   	*prob_sweet_given_banana*prob_yellow_given_banana) \
-                    /(prob_long*prob_sweet*prob_yellow)
+                        /(prob_long*prob_sweet*prob_yellow)
 
 print("probability of banana given that it is long, sweet and yellow:{}".format(
-	                                              prob_long_sweet_yellow_banana)
+	                                          prob_long_sweet_yellow_banana)
                                                   )                    
                      
