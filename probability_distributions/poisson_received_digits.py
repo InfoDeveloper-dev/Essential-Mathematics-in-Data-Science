@@ -34,5 +34,5 @@ prob_x_one = (math.exp(exponent)*m**1)/math.factorial(1)
 
 overall_prob = 1-(prob_x_zero + prob_x_one)
 print("Probability of more than 1 error in 10 received digit is :{}".format(
-	                                                  round(overall_prob,4))
+	                                              round(overall_prob,4))
                                                       )
