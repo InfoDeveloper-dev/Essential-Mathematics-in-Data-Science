@@ -68,9 +68,13 @@ o1_predicted = 1/(1+math.exp(-o1_summation))
 print("predicted output o1_actual is: {}".format(o1_predicted))
 print('-'*80)
 o2_summation = h1_activation*w7+h2_activation*w8+b2
-print("Summation of all incoming values at o2_actual is: {}".format(o2_summation))
+print(
+      "Summation of all incoming values at o2_actual is: {}".format(o2_summation)
+)
 o2_predicted = 1/(1+math.exp(-o2_summation))
-print("predicted output o2_actual is: {}".format(o2_predicted))
+print(
+      "predicted output o2_actual is: {}".format(o2_predicted)
+)
 print('-'*80)
 """
 we have predicted output as well as actual output at o1_actual and o2_actual
@@ -96,23 +100,34 @@ partial_diif_of_o1_summation w.r.t w5 * partial_diif_of_o1_predicted w.r.t o1_su
 """
 e_total = 1/2*((o1_actual-o1_predicted)**2 + (o2_actual-o2_predicted)**2)
 partial_diff_of_e_total_w_r_t_o1_predicted = -(o1_actual-o1_predicted)
-print("partial diff of e_total w.r.t o1 predicted is: {}".format(partial_diff_of_e_total_w_r_t_o1_predicted))
+print(
+      "partial diff of e_total w.r.t o1 predicted is: {}".format
+       (partial_diff_of_e_total_w_r_t_o1_predicted)
+)
 """
 we are calculating partial diff of e_total w.r.t o1 predicted.
 Since output is standard logistic sigmoid function  
 partial_derivate_of standard logistic sigmoid function = f(x)(1-f(x))
 """
 partial_diff_of_o1_predicted_w_r_t_o1_summation = o1_predicted*(1-o1_predicted)
-print("partial diff of o1_predicted w.r.t o1_summation is: {}".format(partial_diff_of_o1_predicted_w_r_t_o1_summation))
+print(
+      "partial diff of o1_predicted w.r.t o1_summation is: {}".format
+       (partial_diff_of_o1_predicted_w_r_t_o1_summation)
+)
 """
 we are calculating the partial_diif_of_o1_summation w.r.t w5
 o1_summation = h1_activation*w5+h2_activation*w6+b2
 partial_derivate of o1_summation w.r.t w5 = h1_activation 
 """
 partial_diff_of_o1_summation_w_r_t_w5 = h1_activation
-print("partial diff of o1 summation w.r.t w5 is: {}".format(partial_diff_of_o1_summation_w_r_t_w5))
+print(
+      "partial diff of o1 summation w.r.t w5 is: {}".format
+       (partial_diff_of_o1_summation_w_r_t_w5)
+)
 print('-'*80)
-partial_derivative_of_etotal_w_r_t_w5 = partial_diff_of_e_total_w_r_t_o1_predicted*partial_diff_of_o1_predicted_w_r_t_o1_summation*partial_diff_of_o1_summation_w_r_t_w5
+partial_derivative_of_etotal_w_r_t_w5 = partial_diff_of_e_total_w_r_t_o1_predicted \
+                                        * partial_diff_of_o1_predicted_w_r_t_o1_summation \
+                                        * partial_diff_of_o1_summation_w_r_t_w5
 print("partial derivative of total error with respect to w5: {}".format(partial_derivative_of_etotal_w_r_t_w5))
 
 updated_weight_w5 = w5-learning_rate*partial_derivative_of_etotal_w_r_t_w5
