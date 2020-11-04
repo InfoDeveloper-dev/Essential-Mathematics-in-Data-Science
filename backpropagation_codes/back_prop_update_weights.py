@@ -128,7 +128,10 @@ print('-'*80)
 partial_derivative_of_etotal_w_r_t_w5 = partial_diff_of_e_total_w_r_t_o1_predicted \
                                         * partial_diff_of_o1_predicted_w_r_t_o1_summation \
                                         * partial_diff_of_o1_summation_w_r_t_w5
-print("partial derivative of total error with respect to w5: {}".format(partial_derivative_of_etotal_w_r_t_w5))
+print(
+      "partial derivative of total error with respect to w5: {}".format
+       (partial_derivative_of_etotal_w_r_t_w5)
+)
 
 updated_weight_w5 = w5-learning_rate*partial_derivative_of_etotal_w_r_t_w5
 print('-'*80)
