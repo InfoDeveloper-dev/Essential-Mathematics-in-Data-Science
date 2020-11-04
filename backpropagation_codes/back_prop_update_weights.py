@@ -42,18 +42,28 @@ It is also called cost function and aim is to minimize the loss function using g
 """
 # neuron at h1 contains two parts one is summation and another is activation_function
 h1_summation = i1*w1+i2*w2+b1
-print("Summation of all incoming values at h1 is: {}".format(h1_summation))
+print(
+      "Summation of all incoming values at h1 is: {}".format(h1_summation)
+)
 # activation function used is standard logistic sigmoid function
 h1_activation = 1/(1+math.exp(-h1_summation))
-print("Activation after summation at h1 is: {}".format(h1_activation))
+print(
+      "Activation after summation at h1 is: {}".format(h1_activation)
+)
 h2_summation =i1*w3+i2*w4+b1
 print('-'*80)
-print("Summation of all incoming values at h2 is: {}".format(h2_summation))
+print(
+      "Summation of all incoming values at h2 is: {}".format(h2_summation)
+)
 h2_activation = 1/(1+math.exp(-h2_summation))
-print("Activation after summation at h2 is: {}".format(h2_activation))
+print(
+      "Activation after summation at h2 is: {}".format(h2_activation)
+)
 print('-'*80)
 o1_summation = h1_activation*w5+h2_activation*w6+b2
-print("Summation of all incoming values at o1_actual is: {}".format(o1_summation))
+print(
+      "Summation of all incoming values at o1_actual is: {}".format(o1_summation)
+)
 o1_predicted = 1/(1+math.exp(-o1_summation))
 print("predicted output o1_actual is: {}".format(o1_predicted))
 print('-'*80)
