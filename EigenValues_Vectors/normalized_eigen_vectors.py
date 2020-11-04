@@ -119,7 +119,7 @@ which is A*X=lambda*X
 lambda = 1
 Hence, 1 and -1 is verified value
 """
-normalized_term = math.sqrt(1**2 + (-1)**2)
+normalized_term = 1/ (math.sqrt(1**2 + (-1)**2))
 print("Normalized term is: {}".format(normalized_term))
 
 normalized_eigen_vector = normalized_term*X_calculated
