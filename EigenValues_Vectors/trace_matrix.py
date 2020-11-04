@@ -57,4 +57,4 @@ trace_with_values = trace.subs(greek_lambda1, -1)
 trace_with_values = trace_with_values.subs(greek_lambda2, 1)
 
 solution = solve(trace_with_values, greek_lambda3)
-print("solution is {} = -{}".format(greek_lambda3, greek_lambda4))
+print("solution is {} = {}".format(greek_lambda3, solution[0]))
