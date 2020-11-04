@@ -2,7 +2,7 @@
 Code explains about normalized eigen vectors
 
 Suppose eigen vectors are[a, b] then 
-normalized eigen vectors are [a/sqrt(a**2+b**2), a/sqrt(a**2+b**2)]
+normalized eigen vectors are [a/sqrt(a**2+b**2), b/sqrt(a**2+b**2)]
 
 Let us explain the concept with the help of code
 For a matrix A = [[5, 3], [1, 3]], one of the normalized Eigen vector is \
